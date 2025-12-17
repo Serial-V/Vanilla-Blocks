@@ -4,7 +4,7 @@ This plugin allows Serenity servers to have working, functional vanilla blocks s
 
 ---
 
-If you visit the `Config`, you can enable or disable specific blocks that you don't want active/running on your server.
+If you visit the [`Config`](https://github.com/Serial-V/Vanilla-Blocks/blob/master/src/Lib/config.ts), you can enable or disable specific blocks that you don't want active/running on your server.
 
 ---
 
