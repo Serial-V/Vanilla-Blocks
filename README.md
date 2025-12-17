@@ -11,3 +11,4 @@ If you visit the `Config`, you can enable or disable specific blocks that you do
 ## Roadmap
 
 - [ ] Functional Redstone
+ - This includes Hoppers ( Will be added soon )
