@@ -1,0 +1,26 @@
+{
+  "name": "vanilla-blocks-plugin",
+  "version": "1.0.0",
+  "author": "Serial-V",
+  "description": "Implements most vanilla-blocks functionality for Serenity.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch"
+  },
+  "keywords": [],
+  "peerDependencies": {
+    "@serenityjs/core": "^0.8.16-beta-20251201000556",
+    "@serenityjs/plugins": "^0.8.16-beta-20251201000556",
+    "@serenityjs/protocol": "^0.8.16-beta-20251201000556",
+    "@serenityjs/logger": "^0.8.16-beta-20251201000556",
+    "@serenityjs/nbt": "^0.8.16-beta-20251201000556"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "mongoose": "^9.0.0"
+  }
+}
