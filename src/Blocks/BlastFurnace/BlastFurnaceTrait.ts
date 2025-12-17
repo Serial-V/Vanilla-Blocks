@@ -216,8 +216,6 @@ export default class BlockBlastFurnaceTrait extends BlockTrait {
    * @param {boolean} lit Whether the furnace should be lit
    */
   private setLit(lit: boolean): void {
-    if (!lit && this.block.identifier === BlockIdentifier.BlastFurnace) return;
-
     const permutation = lit
       ? this.dimension.world.blockPalette.resolvePermutation(BlockIdentifier.LitBlastFurnace, this.block.permutation.state as any)
       : this.dimension.world.blockPalette.resolvePermutation(BlockIdentifier.BlastFurnace, this.block.permutation.state as any);

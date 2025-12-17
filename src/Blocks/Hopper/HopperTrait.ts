@@ -7,4 +7,5 @@ export default class BlockHopperTrait extends BlockTrait {
 
   private readonly container = new BlockContainer(this.block, ContainerType.Hopper, 5);
 
+
 }

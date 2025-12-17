@@ -216,8 +216,6 @@ export default class BlockSmokerTrait extends BlockTrait {
    * @param {boolean} lit Whether the furnace should be lit
    */
   private setLit(lit: boolean): void {
-    if (!lit && this.block.identifier === BlockIdentifier.Smoker) return;
-    
     const permutation = lit
       ? this.dimension.world.blockPalette.resolvePermutation(BlockIdentifier.LitSmoker, this.block.permutation.state as any)
       : this.dimension.world.blockPalette.resolvePermutation(BlockIdentifier.Smoker, this.block.permutation.state as any);
