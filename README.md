@@ -11,4 +11,3 @@ If you visit the [`Config`](https://github.com/Serial-V/Vanilla-Blocks/blob/mast
 ## Roadmap
 
 - [ ] Functional Redstone
-  - This includes Hoppers ( Will be added soon )

@@ -1,5 +1,6 @@
 import { WorldInitializeSignal } from "@serenityjs/core";
 import { Plugin, PluginEvents } from "@serenityjs/plugins";
+import { BlockFixTrait } from "./BlockFixTrait";
 import BlockBlastFurnaceTrait from "./Blocks/BlastFurnace/BlastFurnaceTrait";
 import BlockFurnaceTrait from "./Blocks/Furnace/FurnaceTrait";
 import BlockHopperTrait from "./Blocks/Hopper/HopperTrait";
@@ -31,6 +32,8 @@ export class VanillaBlocksPlugin extends Plugin implements PluginEvents {
     this.logger.info("Vanilla-Blocks Plugin has been loaded!");
 
     if (this.serenity.getWorld()) {
+      this.serenity.getWorld().blockPalette.registerTrait(BlockFixTrait);
+
       for (const trait of this.getEnabledTraits()) {
         this.serenity.getWorld().blockPalette.registerTrait(trait);
       }
@@ -40,6 +43,8 @@ export class VanillaBlocksPlugin extends Plugin implements PluginEvents {
   public onShutDown(_plugin: Plugin): void {
     this.logger.info("Vanilla-Blocks Plugin has been unloaded!");
 
+    this.serenity.getWorld().blockPalette.unregisterTrait(BlockFixTrait);
+
     for (const trait of this.getEnabledTraits()) {
       this.serenity.getWorld().blockPalette.unregisterTrait(trait);
     }
@@ -47,6 +52,8 @@ export class VanillaBlocksPlugin extends Plugin implements PluginEvents {
 
   public beforeWorldInitialize(event: WorldInitializeSignal): boolean {
     const { world } = event;
+
+    world.blockPalette.registerTrait(BlockFixTrait);
 
     for (const trait of this.getEnabledTraits()) {
       world.blockPalette.registerTrait(trait);

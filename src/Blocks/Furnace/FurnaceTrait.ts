@@ -33,7 +33,6 @@ export default class BlockFurnaceTrait extends BlockTrait {
     this.burnTime = this.block.getStorageEntry<ShortTag>("BurnTime")?.valueOf() ?? 0;
 
     if (this.block.hasStorageEntry("Items")) {
-
       const items = this.block.getStorageEntry<ListTag<CompoundTag>>("Items");
       const world = this.block.world;
 
@@ -194,7 +193,7 @@ export default class BlockFurnaceTrait extends BlockTrait {
     for (const [player, id] of this.container.occupants) {
       const p1 = new ContainerSetDataPacket();
       p1.containerId = id;
-      p1.type = ContainerDataType.FurnanceTickCount;
+      p1.type = ContainerDataType.FurnaceTickCount;
       p1.value = this.cookTime;
 
       const p2 = new ContainerSetDataPacket();
