@@ -1,12 +1,13 @@
 {
   "name": "vanilla-blocks-plugin",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "author": "Serial-V",
   "description": "Implements most vanilla-blocks functionality for Serenity.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsup",
-    "watch": "tsup --watch"
+    "watch": "tsup --watch",
+    "release": "git commit -m \"Prepare Release\" || true && npm version patch && git push && git push --tags"
   },
   "keywords": [
     "Vanilla",
