@@ -194,7 +194,7 @@ export default class BlockBlastFurnaceTrait extends BlockTrait {
     for (const [player, id] of this.container.occupants) {
       const p1 = new ContainerSetDataPacket();
       p1.containerId = id;
-      p1.type = ContainerDataType.FurnanceTickCount;
+      p1.type = ContainerDataType.FurnaceTickCount;
       p1.value = this.cookTime;
 
       const p2 = new ContainerSetDataPacket();
