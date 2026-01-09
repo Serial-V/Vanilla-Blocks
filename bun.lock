@@ -5,15 +5,15 @@
     "": {
       "name": "divara-plugin",
       "devDependencies": {
-        "tsup": "^8.3.5",
-        "typescript": "^5.6.3",
+        "tsup": "^8.5.1",
+        "typescript": "^5.9.3",
       },
       "peerDependencies": {
-        "@serenityjs/core": "*",
-        "@serenityjs/logger": "*",
-        "@serenityjs/nbt": "*",
-        "@serenityjs/plugins": "*",
-        "@serenityjs/protocol": "*",
+        "@serenityjs/core": "^0.8.17-beta-20251217200233",
+        "@serenityjs/logger": "^0.8.17-beta-20251217200233",
+        "@serenityjs/nbt": "^0.8.17-beta-20251217200233",
+        "@serenityjs/plugins": "^0.8.17-beta-20251217200233",
+        "@serenityjs/protocol": "^0.8.17-beta-20251217200233",
       },
     },
   },
@@ -214,11 +214,11 @@
 
     "@serenityjs/binarystream-win32-x64-msvc": ["@serenityjs/binarystream-win32-x64-msvc@2.7.3", "", { "os": "win32", "cpu": "x64" }, "sha512-ziYFLEwjrsY/Oj4Mzvwe9FP9+aySZ2cqjBIDLftksuwKjNCcuE5x9fO8aleqjwfjVX2S+GhasVzJ8OkkFZbRDQ=="],
 
-    "@serenityjs/core": ["@serenityjs/core@0.8.15", "", { "dependencies": { "@bedrock-apis/carolina-authentication": "^1.0.0-beta.3", "@napi-rs/canvas": "^0.1.80", "@serenityjs/binarystream": "^3.0.10", "@serenityjs/data": "*", "@serenityjs/emitter": "*", "@serenityjs/leveldb": "^1.3.0", "@serenityjs/logger": "*", "@serenityjs/nbt": "*", "@serenityjs/protocol": "*", "@serenityjs/raknet": "*", "fast-jwt": "4.0.5", "fflate": "^0.8.2", "jimp": "^1.6.0", "simplex-noise": "4.0.3" } }, "sha512-taDRG6OGU1lyjYGmdvqx1CVHe9qVNRIh7Do1XqZfFLf5gy+Qfmt9YtFzCLgpbPc6bnzQnaFZbHHYViOlGIW4cQ=="],
+    "@serenityjs/core": ["@serenityjs/core@0.8.17-beta-20251217200233", "", { "dependencies": { "@bedrock-apis/carolina-authentication": "^1.0.0-beta.3", "@napi-rs/canvas": "^0.1.80", "@serenityjs/binarystream": "^3.0.10", "@serenityjs/data": "0.8.17-beta-20251217200233", "@serenityjs/emitter": "0.8.17-beta-20251217200233", "@serenityjs/leveldb": "^1.3.0", "@serenityjs/logger": "0.8.17-beta-20251217200233", "@serenityjs/nbt": "0.8.17-beta-20251217200233", "@serenityjs/protocol": "0.8.17-beta-20251217200233", "@serenityjs/raknet": "0.8.17-beta-20251217200233", "fast-jwt": "4.0.5", "fflate": "^0.8.2", "jimp": "^1.6.0", "simplex-noise": "4.0.3" } }, "sha512-+myyJy5V15dF5XP2wOoasVIEwoGH/yiC8jBXLulfRLsmi6pxkX2nfZbzn2CutoREocyEXi5cgz71YmNy5Ohu2w=="],
 
-    "@serenityjs/data": ["@serenityjs/data@0.8.15", "", {}, "sha512-lxjXm6UGDpqhBP1QMthC4ywvJ75FrK/u5N8AK3K2b0nKTMtYSHYzBfTG3X7R8swFrDGRWSU6o52kz2FFp2s/Bg=="],
+    "@serenityjs/data": ["@serenityjs/data@0.8.17-beta-20251217200233", "", {}, "sha512-UHcljJi0jBNb29yYQCz3lVvFRlrc2Vln0E4RX6sbShuK3DVzcPMJQ4soSlmy3Q6bmbmzcSlyOzniJ0fSMAJRXQ=="],
 
-    "@serenityjs/emitter": ["@serenityjs/emitter@0.8.15", "", {}, "sha512-3HUHpvqQrDWt1qV46Bqaz9Mp+iwJnLhpXS8beWEdAIycrqwoouMQV1HKZYPlECBvx3QqB8E/lEDP44QbWvdSZQ=="],
+    "@serenityjs/emitter": ["@serenityjs/emitter@0.8.17-beta-20251217200233", "", {}, "sha512-m/wZLXurc/PZjEAGGpV4wTqeGQFNSvdkV+XBtMZwM8CpFmPQLlVK4nnek2k3eY20l42aULsHGSe8iNPv6Itf7w=="],
 
     "@serenityjs/leveldb": ["@serenityjs/leveldb@1.3.0", "", { "optionalDependencies": { "@serenityjs/leveldb-darwin-arm64": "1.3.0", "@serenityjs/leveldb-darwin-x64": "1.3.0", "@serenityjs/leveldb-linux-x64-gnu": "1.3.0", "@serenityjs/leveldb-win32-x64-msvc": "1.3.0" } }, "sha512-SxxDuuteDP72S5egA3hnsV3pxpu1VaxeYDZ/sMA34UnWUGr5xLaMNMYsjt/f9Ss5Np/GocEYmvrgHn1nRILTnw=="],
 
@@ -230,15 +230,15 @@
 
     "@serenityjs/leveldb-win32-x64-msvc": ["@serenityjs/leveldb-win32-x64-msvc@1.3.0", "", { "os": "win32", "cpu": "x64" }, "sha512-C/q8PtER/KOVLRp/NNtk/U863v1tn0zzxcENxVKCE1DAnRffo9hGL2Qv+RWUu9u8EEcgHXnbygl8wmSHbz+TUA=="],
 
-    "@serenityjs/logger": ["@serenityjs/logger@0.8.15", "", { "dependencies": { "colorette": "2.0.20", "moment": "2.30.1" } }, "sha512-NqULSsnafUwYcLD95E06xUIWlmGjn28WfhQoImAgGpi/o6qo3fJYt+eiQ2EDxRmo0Emw9f/6Sd7Ebgw4sVZTcA=="],
+    "@serenityjs/logger": ["@serenityjs/logger@0.8.17-beta-20251217200233", "", { "dependencies": { "colorette": "2.0.20", "moment": "2.30.1" } }, "sha512-CwmgG22GxK8jBqF7vM04hzadxMo6kWFH2ZHeX4/cGtjidN1g4w1p7VY/kxCZZttXEZu4xTZHQkibMfHNTdXphw=="],
 
-    "@serenityjs/nbt": ["@serenityjs/nbt@0.8.15", "", { "dependencies": { "@serenityjs/binarystream": "^3.0.10" } }, "sha512-qMA3IQH2DfNaqG3Jt9JGscZiM5yBugOENgojQ7VpPJKwfdAttxCdx8EeSs6LV440o7pjJjZHZxDguTbEN9t15Q=="],
+    "@serenityjs/nbt": ["@serenityjs/nbt@0.8.17-beta-20251217200233", "", { "dependencies": { "@serenityjs/binarystream": "^3.0.10" } }, "sha512-zfuytL0vBm1UsgNh4hCdLBkI0bE6FxZi2V92sOLC9ZKL041ORkoyfco81kfCankizSdwtJExuXBetmxg0hCc4g=="],
 
-    "@serenityjs/plugins": ["@serenityjs/plugins@0.8.15", "", { "dependencies": { "@serenityjs/binarystream": "2.7.3", "@serenityjs/core": "*", "@serenityjs/emitter": "*", "@serenityjs/logger": "*", "@serenityjs/protocol": "*" } }, "sha512-VaWZPgM4sY+Qm/p4IofPI8Yv76fAuC9BvNAIceDRajBWSsm7oxkuu3+To8TtS51v2RDVYVCceKiuPwry9zSfYw=="],
+    "@serenityjs/plugins": ["@serenityjs/plugins@0.8.17-beta-20251217200233", "", { "dependencies": { "@serenityjs/binarystream": "2.7.3", "@serenityjs/core": "0.8.17-beta-20251217200233", "@serenityjs/emitter": "0.8.17-beta-20251217200233", "@serenityjs/logger": "0.8.17-beta-20251217200233", "@serenityjs/protocol": "0.8.17-beta-20251217200233" } }, "sha512-tjpfNQ2LRtWJb63poLIoSCYD0eVpD/J/c1gArV8K/pGZkcQip2O0lwbaS/I/NzixB9kmPShbTmQkaWSCd1F1EA=="],
 
-    "@serenityjs/protocol": ["@serenityjs/protocol@0.8.15", "", { "dependencies": { "@serenityjs/binarystream": "^3.0.10", "@serenityjs/nbt": "*", "@serenityjs/raknet": "*" } }, "sha512-t4APfTuso5Rgz+Pecwl/z9ZqV8p3WxigSHTMq5qOrOCG8p8Ym5sunSBVIrUFHZGHMFzhfj8b41/qyEnAk57ECQ=="],
+    "@serenityjs/protocol": ["@serenityjs/protocol@0.8.17-beta-20251217200233", "", { "dependencies": { "@serenityjs/binarystream": "^3.0.10", "@serenityjs/nbt": "0.8.17-beta-20251217200233", "@serenityjs/raknet": "0.8.17-beta-20251217200233" } }, "sha512-HbRngtLnHmNQ3cFtp4o1W6ahFOe+h8HebqOYViuYsbPYcKRSmnlSn5Vv0x68BLD1QHzFfXbdLZeKG0GpNLCy0w=="],
 
-    "@serenityjs/raknet": ["@serenityjs/raknet@0.8.15", "", { "dependencies": { "@serenityjs/binarystream": "^3.0.10", "@serenityjs/emitter": "*", "@serenityjs/logger": "*", "@serenityjs/nbt": "*", "reflect-metadata": "0.2.2" } }, "sha512-ngwL0qzOuib/KS4j3HOfMbbtqSbF3vB4pplQeTTWdvVpL/RHse3XQB4dWbWowXIC5DsC6l2msSRBcmZmre0XIg=="],
+    "@serenityjs/raknet": ["@serenityjs/raknet@0.8.17-beta-20251217200233", "", { "dependencies": { "@serenityjs/binarystream": "^3.0.10", "@serenityjs/emitter": "0.8.17-beta-20251217200233", "@serenityjs/logger": "0.8.17-beta-20251217200233", "@serenityjs/nbt": "0.8.17-beta-20251217200233", "reflect-metadata": "0.2.2" } }, "sha512-tgPy7PGqHUAMo0FEuJh7262N1oxpwCJjQY9EDqiQPwO3PH3pO1R7Uqf+npgLA2bSjBiRNOYf3QN3UZ77nP1dHA=="],
 
     "@tokenizer/token": ["@tokenizer/token@0.3.0", "", {}, "sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A=="],
 

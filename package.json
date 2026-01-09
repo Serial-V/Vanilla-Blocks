@@ -15,17 +15,14 @@
     "Blocks"
   ],
   "peerDependencies": {
-    "@serenityjs/core": "^0.8.16-beta-20251201000556",
-    "@serenityjs/plugins": "^0.8.16-beta-20251201000556",
-    "@serenityjs/protocol": "^0.8.16-beta-20251201000556",
-    "@serenityjs/logger": "^0.8.16-beta-20251201000556",
-    "@serenityjs/nbt": "^0.8.16-beta-20251201000556"
+    "@serenityjs/core": "^0.8.17-beta-20251217200233",
+    "@serenityjs/plugins": "^0.8.17-beta-20251217200233",
+    "@serenityjs/protocol": "^0.8.17-beta-20251217200233",
+    "@serenityjs/logger": "^0.8.17-beta-20251217200233",
+    "@serenityjs/nbt": "^0.8.17-beta-20251217200233"
   },
   "devDependencies": {
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "mongoose": "^9.0.0"
   }
 }
