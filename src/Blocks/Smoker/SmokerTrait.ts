@@ -130,7 +130,7 @@ export default class BlockSmokerTrait extends BlockTrait {
     }
 
     this.persistIfDirty();
-    if (this.container.occupants.size === 0) return;
+    if (this.container.getAllOccupants().length === 0) return;
     this.sendUI();
   }
 
@@ -159,7 +159,7 @@ export default class BlockSmokerTrait extends BlockTrait {
       entity.setMotion(new Vector3f(vx, vy, vz));
     }
 
-    for (let i = 0; i < this.container.size; i++) {
+    for (let i = 0; i < this.container.getSize(); i++) {
       this.container.storage[i] = null;
     }
 
@@ -189,9 +189,9 @@ export default class BlockSmokerTrait extends BlockTrait {
    * Sends the current furnace state to all players occupying the container
    */
   private sendUI(): void {
-    if (this.container.occupants.size === 0) return;
+    if (this.container.getAllOccupants().length === 0) return;
 
-    for (const [player, id] of this.container.occupants) {
+    for (const [player, id] of this.container.getAllOccupants()) {
       const p1 = new ContainerSetDataPacket();
       p1.containerId = id;
       p1.type = ContainerDataType.FurnaceTickCount;
@@ -237,7 +237,7 @@ export default class BlockSmokerTrait extends BlockTrait {
     if (!this.dirty) return;
 
     const items = new ListTag<CompoundTag>();
-    for (let i = 0; i < this.container.size; i++) {
+    for (let i = 0; i < this.container.getSize(); i++) {
       const itemStack = this.container.getItem(i);
       if (!itemStack) continue;
       const storage = itemStack.getStorage();

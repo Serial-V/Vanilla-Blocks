@@ -62,7 +62,7 @@ export default class BlockHopperTrait extends BlockTrait {
   }
 
   public onTick(_details: TraitOnTickDetails): void {
-    for (let i = 0; i < this.container.size; i++) {
+    for (let i = 0; i < this.container.getSize(); i++) {
       if (this.container.getItem(i)) {
         this.container.updateSlot(i);
         this.dirty = true;
@@ -120,11 +120,11 @@ export default class BlockHopperTrait extends BlockTrait {
 
     const targetContainer = inventoryTrait.container;
 
-    for (let i = 0; i < this.container.size; i++) {
+    for (let i = 0; i < this.container.getSize(); i++) {
       const item = this.container.getItem(i);
       if (!item) continue;
 
-      for (let j = 0; j < targetContainer.size; j++) {
+      for (let j = 0; j < targetContainer.getSize(); j++) {
         const targetItem = targetContainer.getItem(j);
 
         if (targetItem && targetItem.identifier === item.identifier && targetItem.getStackSize() < targetItem.maxStackSize) {
@@ -158,11 +158,11 @@ export default class BlockHopperTrait extends BlockTrait {
 
       const sourceContainer = inventoryTrait.container;
 
-      for (let i = 0; i < sourceContainer.size; i++) {
+      for (let i = 0; i < sourceContainer.getSize(); i++) {
         const item = sourceContainer.getItem(i);
         if (!item) continue;
 
-        for (let j = 0; j < this.container.size; j++) {
+        for (let j = 0; j < this.container.getSize(); j++) {
           const targetItem = this.container.getItem(j);
 
           if (targetItem && targetItem.identifier === item.identifier && targetItem.getStackSize() < targetItem.maxStackSize) {
@@ -195,7 +195,7 @@ export default class BlockHopperTrait extends BlockTrait {
       let remaining = itemStack.getStackSize();
 
       //Fill existing stacks first
-      for (let i = 0; i < this.container.size && remaining > 0; i++) {
+      for (let i = 0; i < this.container.getSize() && remaining > 0; i++) {
         const targetItem = this.container.getItem(i);
 
         if (targetItem && targetItem.identifier === itemStack.identifier && targetItem.getStackSize() < targetItem.maxStackSize) {
@@ -208,7 +208,7 @@ export default class BlockHopperTrait extends BlockTrait {
       }
 
       //Place leftovers into empty slots
-      for (let i = 0; i < this.container.size && remaining > 0; i++) {
+      for (let i = 0; i < this.container.getSize() && remaining > 0; i++) {
         const targetItem = this.container.getItem(i);
 
         if (!targetItem) {
@@ -253,7 +253,7 @@ export default class BlockHopperTrait extends BlockTrait {
       entity.setMotion(new Vector3f(vx, vy, vz));
     }
 
-    for (let i = 0; i < this.container.size; i++) {
+    for (let i = 0; i < this.container.getSize(); i++) {
       this.container.storage[i] = null;
     }
 
@@ -265,7 +265,7 @@ export default class BlockHopperTrait extends BlockTrait {
     if (!this.dirty) return;
 
     const items = new ListTag<CompoundTag>();
-    for (let i = 0; i < this.container.size; i++) {
+    for (let i = 0; i < this.container.getSize(); i++) {
       const itemStack = this.container.getItem(i);
       if (!itemStack) continue;
 
